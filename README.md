@@ -157,11 +157,24 @@ Résultat :
 <img width="1894" height="558" alt="image" src="https://github.com/user-attachments/assets/59e8ce83-c161-423f-84b3-48523c70f6ba" />  
 <img width="1475" height="588" alt="image" src="https://github.com/user-attachments/assets/194a6b96-6ad8-4840-8e2d-8911e467abba" />  
 <img width="1407" height="502" alt="image" src="https://github.com/user-attachments/assets/8aacd4a3-029a-4287-a9d4-5952eb347855" />  
+  
+## Étape 8  
+Commande: docker-compose stop  
+Explication:Cette commande arrête tous les conteneurs définis dans le fichier docker-compose.yml sans les supprimer. Les conteneurs restent présents sur le système mais ne sont plus en cours d'exécution. Cette approche est utile lorsqu'on souhaite mettre en pause l'application temporairement sans perdre la configuration des conteneurs.  
+Résultat :  
+<img width="2422" height="134" alt="image" src="https://github.com/user-attachments/assets/28f4fd4b-5ced-4266-b49a-1a957d6027b6" />  
+  
+## Étape 9  
+Commande: docker-compose ps -a  
+Explication:Cette commande affiche l'état de tous les conteneurs gérés par Docker Compose, y compris ceux qui sont arrêtés. Le paramètre `-a` (all) permet de voir également les conteneurs qui ne sont pas en cours d'exécution.     
+Résultat :  
+<img width="2477" height="139" alt="image" src="https://github.com/user-attachments/assets/ac888403-2c07-43eb-ab14-14b2b461dff2" />  
 
- 
-
-
-
+## Étape 10
+Commande: docker-compose down   
+Explication:Cette commande ne supprime PAS les volumes de données par défaut. Les données MongoDB sont donc préservées dans le volume `mongo-data`. Pour supprimer également les volumes, il faudrait utiliser `docker-compose down -v`.     
+Résultat :  
+<img width="2453" height="174" alt="image" src="https://github.com/user-attachments/assets/ca46f594-b5b7-4ccd-8dc2-b7641a19255f" />  
 
 
 
