@@ -1,0 +1,20 @@
+# depense
+node_modules/
+
+# environment
+.env
+
+# build
+dist/
+build/
+
+# log
+*.log
+
+# system
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
